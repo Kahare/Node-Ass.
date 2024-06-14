@@ -1,0 +1,25 @@
+### Create a Product (POST Endpoint)
+
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+  "name": "Laptop X1",
+  "price": 1500,
+  "description": "High-performance laptop"
+}
+
+### Search Product by Name
+
+GET http://localhost:3000/api/products/search?name=Laptop
+Content-Type: application/json
+
+### Get Paginated List of Products (First 5)
+
+GET http://localhost:3000/api/products?pageNumber=1&pageSize=5
+Content-Type: application/json
+
+### Filter Products by Price Range ($1000 - $3000)
+
+GET http://localhost:3000/api/products/filter?minPrice=1000&maxPrice=3000
+Content-Type: application/json
